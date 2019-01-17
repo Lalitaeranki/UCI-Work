@@ -1,0 +1,1 @@
+let austinTemps = [76, 59, 59, 73, 71];
