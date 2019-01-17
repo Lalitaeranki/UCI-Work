@@ -1,0 +1,68 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+class <- c("Abraham", "Beatrice", "Cory", "Dinah", "Eric", "Felicia")
+```
+```{r}
+roll_call <- function(class) {
+  print(Sys.Date())
+  for (student in class){
+    print(student)
+  }
+}
+
+roll_call(class)
+```
+```{r}
+locker_combinations <- function(class){
+  for (student in class){
+    combination <- sample(33, 3)
+    print(student)
+    print(combination)
+  }
+}
+locker_combinations(class)
+```
+```{r}
+for (student in class){
+  second_letter <- substr(student, 2, 2)
+  if (second_letter == 'e'){
+    print(student)
+    combination <- sample(34:66, 3)
+    print(combination)
+  }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
